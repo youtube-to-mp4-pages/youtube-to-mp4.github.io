@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube to mp4 Downloader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF0000',
+                        secondary: '#282828'
+                    }
+                }
+            }
+        }
+    </script>
+	
+<meta name="google-site-verification" content="8CJI3TJ5_w8BRTT8Bi8nYHK75FcW9hFirasHIV1SjKM" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "YouTube to MP4 Converter",
+  "description": "Fast and reliable tool for converting YouTube videos to MP4 format with high quality output",
+  "headline": "🎬 YouTube to MP4 — professional video converter for downloading and converting YouTube content",
+  "url": "YOUR_GITHUB_PAGES_URL_HERE",
+  "codeRepository": "https://github.com/youtube-to-mp4-app/youtube-to-mp4",
+  "image": "https://i.ibb.co/ycZY6T1K/youtube-go-logo-png-seeklogo-327533.png",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.8+",
+  "license": "MIT",
+  "applicationCategory": "MultimediaApplication",
+  "keywords": "youtube to mp4, download youtube video, youtube mp4, how to download youtube videos, youtube to mp4 converter, mp4 download, youtube mp4 downloader, youtube download video",
+  "author": {
+    "@type": "Organization",
+    "name": "YouTube to MP4 Converter"
+  },
+  "datePublished": "2025-03-15",
+  "dateModified": "2025-11-29",
+  "operatingSystem": "Windows, macOS, Linux"
+}
+</script>
+	
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+                YouTube to mp4 <i data-feather="film" class="inline"></i>
+            </h1>
+            <p class="text-xl text-gray-700 mb-6">
+                Powerful desktop app to download YouTube videos and audio — completely free and watermark-free.
+            </p>
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full flex items-center gap-1">
+                    <i data-feather="zap" class="w-4 h-4"></i> Fast
+                </span>
+                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full flex items-center gap-1">
+                    <i data-feather="headphones" class="w-4 h-4"></i> Lossless Audio
+                </span>
+                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full flex items-center gap-1">
+                    <i data-feather="monitor" class="w-4 h-4"></i> 8K Support
+                </span>
+                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full flex items-center gap-1">
+                    <i data-feather="list" class="w-4 h-4"></i> Playlist Downloader
+                </span>
+                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full flex items-center gap-1">
+                    <i data-feather="moon" class="w-4 h-4"></i> Dark Mode
+                </span>
+                <span class="px-3 py-1 bg-primary/10 text-primary rounded-full flex items-center gap-1">
+                    <i data-feather="refresh-cw" class="w-4 h-4"></i> Auto Updates
+                </span>
+            </div>
+            <img src="http://static.photos/technology/1024x576/42" alt="YouTube to mp4 Downloader" class="rounded-xl shadow-lg w-full max-w-4xl mx-auto border-2 border-gray-200">
+        </header>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Main content -->
+            <main class="flex-1 lg:w-2/3 space-y-12">
+                <!-- Sections from readme -->
+                <section id="about" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="info" class="w-6 h-6"></i> About
+                    </h2>
+                    <p>
+                        <strong><a href="https://github.com/youtube-to-mp4-app/youtube-to-mp4" class="text-primary hover:underline">YouTube to mp4 downloader</a></strong> is designed for speed, reliability, and quality.  
+                        It supports <strong>playlists, channels, Shorts, and private videos</strong>, while offering <strong>lossless audio extraction</strong> and <strong>smart queue management</strong>.  
+                        All wrapped in a lightweight desktop UI built with <strong>Python</strong> and <strong>PySide6</strong>.
+                    </p>
+                </section>
+
+                <section id="features" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="star" class="w-6 h-6"></i> Key Features
+                    </h2>
+                    <h3 class="text-2xl font-semibold flex items-center gap-2 mt-6">
+                        <i data-feather="tool" class="w-5 h-5"></i> Core Features
+                    </h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full border border-gray-200">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="px-4 py-3 text-left">Feature</th>
+                                    <th class="px-4 py-3 text-left">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Universal YouTube Support</td>
+                                    <td class="px-4 py-3">Download from any YouTube link — videos, playlists, channels, or Shorts</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Multiple Formats</td>
+                                    <td class="px-4 py-3">MP4, MP3, M4A, WAV, FLAC, AAC, OPUS, and VORBIS</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Smart Playlist Organizer</td>
+                                    <td class="px-4 py-3">Auto-sorts videos into playlist-named folders</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Scheduler</td>
+                                    <td class="px-4 py-3">Automatically start downloads at a specific time</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">Audio Quality Control</td>
+                                    <td class="px-4 py-3">Choose bitrates (128–320k) or use "Best" mode for lossless quality</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold flex items-center gap-2 mt-8">
+                        <i data-feather="settings" class="w-5 h-5"></i> Advanced Features
+                    </h3>
+                    <ul class="list-disc pl-5">
+                        <li><strong>Batch Processing</strong> – Queue and process multiple YouTube links at once</li>
+                        <li><strong>Zero-Loss Extraction</strong> – Smart copy mode for original AAC/OPUS/M4A audio</li>
+                        <li><strong>Profile Management</strong> – Save user settings and profiles</li>
+                        <li><strong>Import / Export Profiles</strong> – Migrate between devices easily</li>
+                        <li><strong>Proxy & Bandwidth Control</strong> – Manage speed or network preferences</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold flex items-center gap-2 mt-8">
+                        <i data-feather="user" class="w-5 h-5"></i> User Experience
+                    </h3>
+                    <ul class="list-disc pl-5">
+                        <li>Dark & Light themes</li>
+                        <li>Download notifications (complete, failed, canceled)</li>
+                        <li>Modern animations and smooth UI transitions</li>
+                        <li>Detailed error logs</li>
+                        <li>Searchable history and filtering</li>
+                    </ul>
+                </section>
+
+                <section id="screenshots" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="image" class="w-6 h-6"></i> Screenshots
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                        <div class="bg-white p-4 rounded-xl shadow">
+                            <img src="http://static.photos/technology/640x360/1" alt="Homepage" class="rounded-lg w-full h-auto border border-gray-200">
+                            <p class="mt-3 text-center font-medium">🏠 Homepage</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow">
+                            <img src="http://static.photos/technology/640x360/2" alt="Video Download Interface" class="rounded-lg w-full h-auto border border-gray-200">
+                            <p class="mt-3 text-center font-medium">🎥 Video Download Interface</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow">
+                            <img src="http://static.photos/technology/640x360/3" alt="Audio Extractor" class="rounded-lg w-full h-auto border border-gray-200">
+                            <p class="mt-3 text-center font-medium">🎧 Audio Extractor</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow">
+                            <img src="http://static.photos/technology/640x360/4" alt="History Panel" class="rounded-lg w-full h-auto border border-gray-200">
+                            <p class="mt-3 text-center font-medium">📜 History Panel</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="installation" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="download" class="w-6 h-6"></i> Installation
+                    </h2>
+                    <h3 class="text-2xl font-semibold flex items-center gap-2 mt-6">Windows</h3>
+                    <ol class="list-decimal pl-5">
+                        <li>Download the latest <code><a href="https://github.com/youtube-to-mp4-app/youtube-to-mp4" class="text-primary hover:underline">youtubemp4.exe</a></code> installer or <code>youtubemp4.zip</code> archive from Releases</li>
+                        <li>Run the installer or extract the <code>**youtubemp4**.zip</code></li>
+                        <li>Launch <strong>YouTube Downloader.exe</strong> — all dependencies (including FFmpeg) are included</li>
+                    </ol>
+                </section>
+
+                <section id="usage" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="terminal" class="w-6 h-6"></i> Usage
+                    </h2>
+                    <h3 class="text-2xl font-semibold flex items-center gap-2 mt-6">Basic Usage</h3>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto"><code class="language-bash"># Launch the app
+python main.py</code></pre>
+
+                    <h3 class="text-2xl font-semibold flex items-center gap-2 mt-6">Tips & Tricks</h3>
+                    <ul class="list-disc pl-5">
+                        <li>Drag & drop for quick URL addition</li>
+                        <li>Enable system tray for background operation</li>
+                        <li>Use scheduler for off-peak downloads</li>
+                        <li><strong>Best Audio Quality</strong>: Preserve Original + 320k bitrate</li>
+                        <li><strong>Lossless Audio</strong>: Use M4A/FLAC with copy mode</li>
+                    </ul>
+                </section>
+
+                <section id="faq" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="help-circle" class="w-6 h-6"></i> FAQ
+                    </h2>
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-bold text-lg">How do I download YouTube to mp4?</h4>
+                            <p class="mt-2">Paste the YouTube video URL into YouTube to mp4 app and click <strong>Download</strong>. Videos are saved in MP4.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-bold text-lg">Can I bulk download YouTube video?</h4>
+                            <p class="mt-2">Yes. Paste video URL and use the bulk download feature. Videos are organized into named folders.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-bold text-lg">Does YouTube support other platforms?</h4>
+                            <p class="mt-2">Yes. Powered by <strong>yt-dlp</strong>, it supports TikTok, Instagram, Twitter/X, Vimeo, Facebook, and 5500+ sites.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contributing" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="git-pull-request" class="w-6 h-6"></i> Contributing
+                    </h2>
+                    <p class="mt-4">
+                        We welcome contributions!  
+                        Report bugs via Issues. Request new features via Feature Requests.  
+                        Fork, create branches, and submit PRs with improvements.
+                    </p>
+                </section>
+
+                <section id="license" class="prose max-w-none">
+                    <h2 class="text-3xl font-bold text-secondary flex items-center gap-2">
+                        <i data-feather="file-text" class="w-6 h-6"></i> License
+                    </h2>
+                    <p class="mt-4">
+                        MIT License.
+                    </p>
+                </section>
+            </main>
+
+            <!-- Sidebar navigation -->
+            <aside class="lg:w-1/3 lg:max-w-xs">
+                <div class="lg:sticky lg:top-8 bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <h3 class="font-bold text-xl mb-4 flex items-center gap-2">
+                        <i data-feather="menu" class="w-5 h-5"></i> Contents
+                    </h3>
+                    <nav class="space-y-2">
+                        <a href="#about" class="block py-2 px-3 rounded hover:bg-gray-100 transition">About</a>
+                        <a href="#features" class="block py-2 px-3 rounded hover:bg-gray-100 transition">Key Features</a>
+                        <a href="#screenshots" class="block py-2 px-3 rounded hover:bg-gray-100 transition">Screenshots</a>
+                        <a href="#installation" class="block py-2 px-3 rounded hover:bg-gray-100 transition">Installation</a>
+                        <a href="#usage" class="block py-2 px-3 rounded hover:bg-gray-100 transition">Usage</a>
+                        <a href="#faq" class="block py-2 px-3 rounded hover:bg-gray-100 transition">FAQ</a>
+                        <a href="#contributing" class="block py-2 px-3 rounded hover:bg-gray-100 transition">Contributing</a>
+                        <a href="#license" class="block py-2 px-3 rounded hover:bg-gray-100 transition">License</a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+            <div class="text-2xl font-bold mb-4">🚀 Enjoy using YouTube to mp4!</div>
+            <p class="text-gray-600">
+                ⭐ Star this repository if this YouTube to mp4 tool helped you!
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
